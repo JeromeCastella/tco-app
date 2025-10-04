@@ -99,7 +99,7 @@ with col_bev:
     bev = Vehicle(
         name="BEV",
         purchase_price=st.number_input("Prix d'achat (CHF)", 0, 200_000, 55_000, step=1_000),
-        consumption_per_100km=st.number_input("Conso (kWh/100 km)", 0.0, 40.0, 17.0, step=0.1),
+        consumption_per_100km=st.number_input("Conso (kWh/100 km)", 0.0, 40.0, 17.0, step=0.5),
         energy_price_start=st.number_input("Prix de l'électricité initial (cts/kWh)", 0.0, 500.0, 45.0, step=1.0),
         maintenance_per_km_start=st.number_input("Maintenance (CHF/km)", 0.0, 1.0, 0.03, step=0.01),
         insurance_per_year_start=st.number_input("Assurance (CHF/an)", 0.0, 10_000.0, 900.0, step=50.0),
@@ -111,7 +111,7 @@ with col_ice:
     ice = Vehicle(
         name="ICE",
         purchase_price=st.number_input("Prix d'achat (CHF)", 0, 200_000, 42_000, step=1_000),
-        consumption_per_100km=st.number_input("Conso (L/100 km)", 0.0, 25.0, 10.0, step=0.1),
+        consumption_per_100km=st.number_input("Conso (L/100 km)", 0.0, 25.0, 10.0, step=0.5),
         energy_price_start=st.number_input("Prix du carburant initial (CHF/L)", 0.0, 5.0, 1.95, step=0.01),
         maintenance_per_km_start=st.number_input("Maintenance (CHF/km)", 0.0, 2.0, 0.06, step=0.01),
         insurance_per_year_start=st.number_input("Assurance (CHF/an)", 0.0, 10_000.0, 1_000.0, step=50.0),
